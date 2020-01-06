@@ -18,9 +18,12 @@ $('input[type="submit"]').click(function(){
   },2800);
   setTimeout(function(){
     $('.success').fadeIn();
+
+  window.open("../home.html","_self");
+
   },3200);
 });
-
+/*
 $('input[type="text"],input[type="password"]').focus(function(){
   $(this).prev().animate({'opacity':'1'},200)
 });
@@ -41,5 +44,4 @@ $('.tab').click(function(){
   $(this).fadeOut(200,function(){
     $(this).parent().animate({'left':'0'})
   });
-});
-
+});*/
