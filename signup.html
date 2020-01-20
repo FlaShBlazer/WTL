@@ -5,16 +5,23 @@
 	<meta charset="utf-8">
 	  <meta name="viewport" content="width=device-width, initial-scale=1">
 	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+	    <link rel='stylesheet' href='https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css'><link rel="stylesheet" href="./style.css">
 	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 	  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+	  <script type="text/javascript">
+		function login()
+		{
+				window.navigate('index.html');
+		}
+		</script>
 </head>
-<body>
-	<div style="background-image: url('https://d2htg16wag384p.cloudfront.net/assets/og_image/media_default_emusic@2x.jpg');"> 	 
+<body background='a.jpg'>
+ 	 
 	<div class="container">
 	  <h2 style="color : white; text-align : center;">SignUp</h2>
 	<center>
-	  <div class="card w-50" style=" background-color : transparent; background-size: cover; background-repeat: no-repeat; background-position: center;" >
+	  <div class="card w-50" style=" background-color :  #393d52; background-size: cover; background-repeat: no-repeat; background-position: center;" >
 	    <div>
 		<div>
 		<form style="margin:auto;">
@@ -22,18 +29,22 @@
 
 				<input type="text" name="FullName" placeholder="First name"><br><br>
 				<input type="text" name="username" placeholder="Last name"><br><br>
-				<input type="password" name="password" placeholder="password"><br><br>
-				<input type="password" name="confirm password" placeholder="confirm password"><br><br>
-		  		<input type="tel" name="phone" placeholder="phone"><br><br>
-			<p style="color : white;">
-				gender:
+				<input type="password" name="password" placeholder="Password"><br><br>
+				<input type="password" name="confirm password" placeholder="Confirm password"><br><br>
+		  		<input type="tel" name="phone" placeholder="Phone"><br><br>
+				Gender:
 					<input type="radio" name="gender" value="male"> Male
 					<input type="radio" name="gender" value="female"> Female<br>
 					</br>
-				<button type="button">Submit!</button></br></br>
-				Already have an account?
+					<div class='login_fields__submit'>
+      	<input type='submit' value='Sign Up'><a href="index.html"></a><br>
+      			Already have an account?
 				<a href="index.html">Login</a>
+
+				</br></br>
+				
 			</p>
+		</div>
 		</form>
 		</div>
 		</center>
