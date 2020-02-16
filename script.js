@@ -19,7 +19,7 @@ $('input[type="submit"]').click(function(){
   setTimeout(function(){
     $('.success').fadeIn();
 
-  window.open("../home.html","_self");
+  window.open("./home.html","_self");
 
   },3200);
 });
